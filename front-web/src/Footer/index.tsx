@@ -1,7 +1,7 @@
-import './styles.css';
 import { ReactComponent as YoutubeIcon} from './youtube.svg'
 import { ReactComponent as InstagramIcon} from './instagram.svg'
 import { ReactComponent as LinkedingIcon} from './linkedin.svg'
+import './styles.css';
 
 function Footer() {
     return(
