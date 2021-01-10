@@ -14,7 +14,7 @@ import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
   return (
     <TouchableWithoutFeedback onPress={handleOnPress}>
       <View style={styles.container}>
-          <Image style={styles.imgStyle} resizeMode="contain" source={require('../assets/logo.png')}/>
+        <Image source={require('../assets/logo.png')}/>
         <Text style={styles.text}>DS Delivery</Text>
       </View>
     </TouchableWithoutFeedback>  
@@ -24,7 +24,7 @@ import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#DA5C5C',
-    heigth: 90,
+    height: 90,
     paddingTop: 50,
     flexDirection: 'row',
     justifyContent: 'center'
@@ -37,15 +37,8 @@ const styles = StyleSheet.create({
     lineHeight: 25,
     letterSpacing: -0.24,
     color: '#fff',
-    marginRight: 'auto',
     marginLeft: 15,
     fontFamily: 'OpenSans_700Bold'
-  },
-  imgStyle: {
-    display: 'flex',
-    height: 'auto',
-    width: 50,
-    marginLeft: 'auto'
   }
 });
 
