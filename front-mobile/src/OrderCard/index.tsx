@@ -44,7 +44,7 @@ function OrderCard({order}: Props) {
         <Text style={styles.orderPrice}>{formatPrice(order.total)}</Text>
       </View>
       <Text style={styles.text}>{dateFromNow(order.moment)}</Text>
-      <Text style={styles.text}> {order.address}</Text>
+      <Text style={styles.text} numberOfLines={1} ellipsizeMode="tail"> {order.address}</Text>
       <View style={styles.productsList}>
        {order.products.map(product => ( 
           <Text key={product.id} style={styles.text}>{product.name}</Text>
